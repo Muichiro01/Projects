@@ -1,0 +1,43 @@
+"""Build a game where the computer picks a secret number between 1 and 50. You have 5 attempts to guess it. After every wrong guess your program shows a hint telling you how close you are. Remaining lives are shown as hearts after each attempt.
+
+💡 Hint: Store your secret number in a variable — for example: secret = 27
+
+
+
+If you already know the random module, feel free to use it! This test checks your logic (conditions, loops, input/output).
+
+
+What you need to use
+------------------------------------------------------------------------
+1.  int(input())       →  to read the player's guess
+2.  while loop         →  stops after 5 attempts or when player wins
+3.  if/elif/else       →  hint system —
+
+🧊 ice cold, 🥶 cold, 🌡️ warm, or 🔥 hot
+
+
+4.  for loop           →  shows 
+
+remaining ❤️ hearts
+
+ after each wrong guess
+5.  win/loss message   →  reveals the secret number if attempts run out"""
+
+secret=50
+i=0
+while i<=5:
+i=i+1
+n=int(input("Enter your guess!"))
+if n<=15:
+  print("Ice cold!")
+elif n>15 and n<=25:
+  print("Cold!")
+elif n>25 and n<=35:
+  print("Warm!")
+elif n>35 and n<=49:
+  print("HOT!")
+elif n==50:
+  print("CORRECT!")
+else:
+  print("Invalid choice!")
+print ("You lost! The correct answer was 50!")
